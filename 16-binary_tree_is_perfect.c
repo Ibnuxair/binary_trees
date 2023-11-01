@@ -31,15 +31,15 @@ int binary_tree_is_full(const binary_tree_t *tree)
  */
 int binary_tree_balance(const binary_tree_t *tree)
 {
-        size_t left_height = 0, right_height = 0;
+	size_t left_height = 0, right_height = 0;
 
-        if (tree == NULL)
-                return (0);
+	if (tree == NULL)
+		return (0);
 
-        left_height = binary_tree_height(tree->left);
-        right_height = binary_tree_height(tree->right);
+	left_height = binary_tree_height(tree->left);
+	right_height = binary_tree_height(tree->right);
 
-        return ((int)left_height - right_height);
+	return ((int)left_height - right_height);
 }
 
 /**
